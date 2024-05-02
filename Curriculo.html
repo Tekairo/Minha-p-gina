@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Profissional</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #0e0014; /* roxo */
+            overflow: hidden;
+            position: relative;
+            background: url('https://images.wallpapersden.com/image/download/sci-fi-astronaut-4k-dark_bG1qbGqUmZqaraWkpJRqZmdlrWdtbWU.jpg') no-repeat center center fixed; /* Fundo da galáxia em 4K */
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .left-column, .right-column {
+            flex: 1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            background-color: rgba(241, 247, 239, 0.8); /* Fundo semi-transparente */
+            border: 2px solid #0e0014; /* Borda roxa */
+            margin: 0 10px;
+        }
+
+        .left-column h2, .right-column h3 {
+            margin-top: 0;
+            border-bottom: 2px solid #0e0014; /* roxo */
+            padding-bottom: 10px;
+        }
+
+        .left-column p, .right-column p {
+            border-left: 2px solid #0e0014; /* roxo */
+            padding-left: 10px;
+        }
+
+        .resume-button {
+            display: block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0e0014; /* roxo */
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            width: 120px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .resume-button:hover {
+            background-color: #0e0014; /* roxo mais escuro */
+        }
+
+        .footer {
+            background-color: rgba(241, 247, 239, 0.8); /* Fundo semi-transparente */
+            color: #0e0014; /* roxo */
+            text-align: right;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(241, 247, 239, 0.8);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: center;
+            bottom: 0;
+            width: 10%;
+            margin-bottom: 150px;
+        }
+
+        /* Animação de estrelas em movimento */
+        .stars-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background:transparent;
+            animation: starsMove 50s linear infinite;
+        }
+
+        @keyframes starsMove {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100%); }
+        }
+
+        /* Animação do cursor de foguete */
+        .rocket-cursor {
+            cursor: url('https://i.imgur.com/MTnwF6F.png'), auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars-animation"></div>
+    <div class="container">
+        <div class="left-column">
+            <h2>GABRIEL AUGUSTO TITO DA SILVA</h2>
+            <p>Linguagens: Python, CSS, HTML, JAVA, JavaScript.</p>
+            <p>Frameworks: Flask, Pyspark,Spring Boot, Express.js. </p>
+            <p>Formação: Engenheiro de Software.</p>
+            <p>E-mail: gabrielaugusto.tito@gmail.com</p>
+            <p>Localidade: São Paulo, Capital - Brasil</p>
+            <a href="C:\Users\gtito\Downloads\Profile (18).pdf" download class="resume-button">Baixar Currículo</a>
+        </div>
+        <div class="right-column">
+            <div class="profile-picture">
+                <img src="C:\Users\gtito\Pictures\1714096813867.jpeg" alt="Sua Foto" width="150" height="150" style="border-radius: 50%; border: 2.5px solid #0e0014;"> <!-- Inserir a sua foto aqui -->
+            </div>
+            <h3>ASPIRANTE DA TECNOLOGIA!</h3>
+            <p>Jornalista com experiência em marketing e dados, especializando-se em Engenharia de Software e com foco em soluções em nuvem. </p>
+            <p>Certificado em Python e com sólida experiência em laboratório.</p>
+            <p>Habilidades em análise de dados, estratégias de marketing e desenvolvimento de soluções tecnológicas. </p>
+            <p>Versatilidade em diferentes linguagens de programação, incluindo Python e Java.</p>
+            <p>Apaixonado por aprender e aplicar novas tecnologias para impulsionar a inovação e resolver desafios complexos.</p>
+        </div>
+    </div>  
+    <footer class="footer">
+        <a href="https://www.linkedin.com/in/gabriel-tito-965696159/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30"></a>
+        <a href="https://github.com/Tekairo" target="_blank"><img src="C:\Users\gtito\Pictures\25231.png" alt="GitHub" width="30"></a>
+    </footer>
+    <script>
+        // Adiciona a classe ao body para aplicar a animação de foguete ao cursor do mouse
+        document.body.classList.add('rocket-cursor');
+    </script>
+</body>
+</html>
